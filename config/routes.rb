@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'crafting/index' => 'crafting#index'
+
+  get 'coding/index' => 'coding#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
