@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>DonnaApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>DonnaApp</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+		<!-- Following Menu -->
+		<div class="ui large top fixed hidden menu">
+		  <div class="ui container">
+		    <a class="active item">Home</a>
+		    <a class="item">Coding</a>
+		    <a class="item">Crafting</a>
+		    <div class="right menu">
+		      <div class="item">
+		    		<a href="mailto:dylou88@gmail.com?subject=Contact from DonnaApp" target="_blank">Contact</a>
+	    		</div>
+		      <div class="item">
+		        <a class="ui icon" href="https://github.com/DonnaLou" target="_blank"><i class="large github icon"></i></a>
+		        <a class="ui icon" href="https://www.linkedin.com/in/donna-lou-02957733" target="_blank"><i class="large linkedin square icon"></i></a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
-</body>
+		<%= yield %>
+
+		<div class="ui inverted vertical footer segment">
+	    <div class="ui container">
+	      <div class="ui stackable inverted divided equal height stackable grid">
+	        <div class="three wide column">
+	          <h4 class="ui inverted header">About</h4>
+	          <div class="ui inverted link list">
+	            <a href="#" class="item">TODO</a>
+	            <a href="#" class="item">TODO </a>
+	            <a href="#" class="item">TODO </a>
+	            <a href="#" class="item">TODO </a>
+	          </div>
+	        </div>
+	        <div class="three wide column">
+	          <h4 class="ui inverted header">Services</h4>
+	          <div class="ui inverted link list">
+	            <a href="#" class="item">TODO</a>
+	            <a href="#" class="item">TODO </a>
+	            <a href="#" class="item">TODO </a>
+	            <a href="#" class="item">TODO</a>
+	          </div>
+	        </div>
+	        <div class="seven wide column">
+	          <h4 class="ui inverted header">Footer Header</h4>
+	          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	</body>
 </html>
