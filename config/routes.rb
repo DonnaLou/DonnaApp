@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   get 'coding/index' => 'coding#index'
 
+  get 'resume' => 'home#resume'
+  get 'bio' => 'home#bio'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

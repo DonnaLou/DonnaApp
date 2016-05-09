@@ -3,10 +3,10 @@
 	<head>
 	  <title>DonnaApp</title>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 	</head>
-	<body>
+	<body>		
 
 		<!-- Following Menu -->
 		<div class="ui large top fixed hidden menu">
@@ -34,8 +34,8 @@
 	        <div class="three wide column">
 	          <h4 class="ui inverted header">About</h4>
 	          <div class="ui inverted link list">
-	            <a href="#" class="item">Bio</a>
-	            <a href="#" class="item">Resume </a>
+	            <a href="/bio" class="item">Bio</a>
+	            <a href="/resume" class="item">Resume </a>
 	            <a href="/coding/index" class="item">Coding </a>
 	            <a href="/crafting/index" class="item">Crafting </a>
 	          </div>
