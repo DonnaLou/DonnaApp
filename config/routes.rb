@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'coding/index' => 'coding#index'
 
-  get 'resume' => 'home#resume'
+  get 'programming' => 'home#programming'
   get 'bio' => 'home#bio'
 
   # The priority is based upon order of creation: first created -> highest priority.

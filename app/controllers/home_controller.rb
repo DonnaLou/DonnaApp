@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 	def index
 	end
 
-	def resume
+	def programming
 	end
 
 	def bio
