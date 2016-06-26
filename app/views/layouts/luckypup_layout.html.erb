@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Lucky Pup Dog Rescue</title>
+	  <%= stylesheet_link_tag    'luckypup_layout', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Original+Surfer', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>	
+			<div style="position:fixed; top:0; background-color: yellow; z-index: 200000; width:100%">
+				<h4 class="ui header center aligned red">Disclaimer: This is not the official organization website. <a href="http://www.luckypuprescue.org/">Click Here</a> for the official site. <span style="float:right"><a href="/">Back to Donna</a></span>
+				</h4>
+			</div>
+
+		<div class="ui top fixed menu" style="margin-top:15px">
+		  <div class="ui container">
+		    <a href="/luckypup" class="active item" >Home</a>
+		    <a href="/luckypup/adoption" class="item">Dogs for Adoption</a>
+		    <a class="item">Donate</a>
+		    <a class="item">Upcoming Events</a>
+		    <a class="item">Happy Endings</a>
+		    <a class="item">Contact</a>
+		    <a class="item">Our Sponsors</a>
+		    <div class="right item">
+		      <a href=""><i class="large facebook square icon red"></i></a>
+		      <a href=""><i class="large youtube icon red"></i></a>
+		      <a href=""><i class="large twitter icon red"></i></a>
+		      <a href=""><i class="large pinterest square icon red"></i></a>
+		      <a href=""><i class="large instagram icon red"></i></a>
+		    </div>
+		  </div>
+		</div>
+
+		<%= yield %>
+
+
+   <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">About</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Happy Endings</a>
+              <a href="#" class="item">Our Sponsors</a>
+              <a href="#" class="item">Contact</a>
+            </div>
+          </div>
+          <div class="three wide column">
+            <h4 class="ui inverted header">How you can help</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Dogs for Adoption</a>
+              <a href="#" class="item">Upcoming Events</a>
+              <a href="#" class="item">Donate</a>
+            </div>
+          </div>
+          <div class="seven wide column">
+            <h4 class="ui inverted header">Credits</h4>
+            <p>Website designed and implemented by volunteer, Donna Lou.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

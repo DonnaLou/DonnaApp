@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'programming' => 'home#programming'
   get 'bio' => 'home#bio'
 
+  get 'luckypup' => 'lucky_pup#index'
+  get 'luckypup/adoption' => 'lucky_pup#adoption'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
