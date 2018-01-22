@@ -3,6 +3,17 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 ready =-> 
-	$(".tabular.menu .item").tab()
+	$(".ui.sticky").sticky({
+		context: "#programmingContent",
+		pushing: true,
+		offset: 80
+	})
+	$(".tabular.vertical.menu .item").tab({
+		onVisible: reloadSticky
+	})
+
+reloadSticky =->
+	$(".ui.sticky").sticky('refresh')
+
 
 $(document).ready(ready)
